@@ -55,34 +55,34 @@ class player {
 
   void keyPressed() {
     if (key =='w') {
-      moveyil=true;
-      moveyi=false;
-      movexi=false;
-      movexil=false;
+      moveUp=true;
+      moveDown=false;
+      moveLeft=false;
+      moveRight=false;
     }
     if (key =='s') {
-      moveyil=false;
-      moveyi=true;
-      movexi=false;
-      movexil=false;
+      moveUp=false;
+      moveDown=true;
+      moveLeft=false;
+      moveRight=false;
     }
     if (key =='a') {
-      moveyil=false;
-      moveyi=false;
-      movexi=false;
-      movexil=true;
+      moveUp=false;
+      moveDown=false;
+      moveLeft=false;
+      moveRight=true;
     }
     if (key =='d') {
-      moveyil=false;
-      moveyi=false;
-      movexi=true;
-      movexil=false;
+      moveUp=false;
+      moveDown=false;
+      moveLeft=true;
+      moveRight=false;
     }
     if (key ==' ') {
-      moveyil=false;
-      moveyi=false;
-      movexi=false;
-      movexil=false;
+      moveUp=false;
+      moveDown=false;
+      moveLeft=false;
+      moveRight=false;
     }
   }
 }

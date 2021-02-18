@@ -1,46 +1,51 @@
 player player;
 enemy enemy;
+boolean moveLeft, moveRight, moveDown, moveUp, playeri, die, death, fps, enemyi;
 Timer timer2;
-boolean movexi, movexil, moveyi, moveyil, playeri, die, death, fps, enemyi;
 
 void setup() {
   size (1125, 675);
   player = new player();
   enemy = new enemy();
-  movexi=false;
-  moveyi=false;
-  movexil=false;
-  moveyil=false;
+  moveLeft=false;
+  moveDown=false;
+  moveRight=false;
+  moveUp=false;
   playeri=true;
   die=false;
   death=false;
   fps=false;
   enemyi=true;
-  timer2 = new Timer(3);
+  timer2 = new Timer(1);
 }
 void draw () {
   background(255);
   player.keyPressed();
+  
+  if (timer2.run()){
+       
+  }
+  
   if (playeri==true) {
     player.display();
     player.reset();
   }
-  if (movexi==false) {
+  if (moveLeft==false) {
   }
-  if (movexi==true) {
+  if (moveLeft==true) {
     player.movex();
   }
-  if (moveyi==false) {
+  if (moveDown==false) {
   }
-  if (movexil==true) {
+  if (moveRight==true) {
     player.movexl();
   }
-  if (moveyi==true) {
+  if (moveDown==true) {
     player.movey();
   }
-  if (moveyil==false) {
+  if (moveUp==false) {
   }
-  if (moveyil==true) {
+  if (moveUp==true) {
     player.moveyl();
   }
   if (fps==true) {
@@ -49,4 +54,7 @@ void draw () {
   if (enemyi==true) {
     enemy.display();
   }
+  
+  
+  
 }

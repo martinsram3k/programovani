@@ -4,7 +4,6 @@ void fps() {
   text("FPS: " + int(frameRate), 30, 30);
 }
 
-
 void keyPressed() {
   if (key=='š') {
     fps=true;
